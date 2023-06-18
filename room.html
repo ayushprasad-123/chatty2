@@ -1,0 +1,27 @@
+<script type="module" src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+<script type="module" src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script type="module" src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+<link rel="stylesheet" type="text/css" href="chatty.css">
+<script src="chatty.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<body onload="acc()">
+    <center>
+        <h1>Chatty</h1>
+        <h4><i>The new way to chat</i></h3>
+            <br><br><br>
+            <button class="btn btn-primary" onclick="">Add Room!</button>
+            <input type="text" placeholder="Room name" id="rname">
+            <br><br>
+            <h3>Active Rooms</h3>
+            <div id="rooms"></div>
+    </center>
+    <div style="bottom: 0; left: 0; position: fixed;">
+        <div style="float: left;">
+            <h4 id="acc"></h4>
+            <button class="btn btn-warning" id="logout" onclick="logout()">Log Out</button>
+        </div>
+    </div>
+</body>
